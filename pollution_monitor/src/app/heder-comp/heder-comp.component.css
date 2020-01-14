@@ -1,0 +1,11 @@
+mat-icon {
+    float: right;
+    margin-right: 10px;
+  }
+  @media only screen and (min-device-width : 320px) and (max-device-width : 964px) {
+
+    .matmenu{
+padding-left:326px;
+    }
+    /* Styles */
+    }
