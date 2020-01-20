@@ -10,7 +10,7 @@ import { MatSidenav } from '@angular/material';
 export class AppComponent implements OnInit {
   title = 'title';
 
-  @ViewChild('rightSidenav') public sidenav: MatSidenav;
+  @ViewChild('rightSidenav', { static: false }) public sidenav: MatSidenav;
 
   constructor(private sidenavService: SidenavService) { }
 

@@ -6,7 +6,10 @@ var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://spektrodb:FSYIhIR9HHCu8n99Xhn7xs5OxK8yhNaxGrbw1Mv9DQotxCeKGphY2NwetT0HSESw018YxiMiak7SjUgFxCNQLA%3D%3D@spektrodb.documents.azure.com:10255/?ssl=true";
 
 const router = express.Router();
-const app = express();
+var cors = require('cors')
+var app = express()
+
+app.use(cors())
 let mapData ;
 
 

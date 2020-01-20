@@ -12,7 +12,7 @@ export class RightnavbarComponent implements OnInit {
 
   @Output() onFilter: EventEmitter<any> = new EventEmitter();
 
-  @ViewChild('rightSidenav') public sidenav: MatSidenav;
+  @ViewChild('rightSidenav', { static: true }) public sidenav: MatSidenav;
   // @ViewChild('rightMenu') public sidemenu: MatSidenav;
  array: any = [];
 pollutant: any;
